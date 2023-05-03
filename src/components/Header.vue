@@ -99,7 +99,7 @@ export default{
 
 header{
 height: 120px;
-background-color: lightgray;
+background-color: white;
     .cont{
         display: flex;
         justify-content: space-between;

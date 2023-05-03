@@ -44,11 +44,12 @@ export default{
 </template>
 <style lang="scss" scoped>
     section{
-        background-color: rgb(66, 66, 236);
+        background-color:  rgb(13 124 236);
         width: 100%;
         height: 150px;
         display: flex;
         align-items: center;
+        position: relative;
         .cont{
             width: 80%;
             margin: 0 auto;
