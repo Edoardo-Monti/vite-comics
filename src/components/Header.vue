@@ -61,7 +61,7 @@ export default{
             <div class="second-cont">
                 <ul>
                     <li v-for="(elem, index) in array">
-                        <a href="#">{{elem.nome}}</a>
+                        <a href="/">{{elem.nome}}</a>
                     </li>
                      <!-- <li>
                         <a href="#">COMICS</a>
