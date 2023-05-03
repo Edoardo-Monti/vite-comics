@@ -18,6 +18,9 @@ export default{
     </div>
 
 </template>
-<style>
-
+<style lang="scss" scoped>
+div{
+    
+    // background-color: blue;
+}
 </style>
