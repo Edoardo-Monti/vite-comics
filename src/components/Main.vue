@@ -94,9 +94,18 @@ export default{
         <div class="background">
         
         </div>
-        <div>
-            <Cards/>
+        <div class="bg">
+            
+            <div class="wid">
+                <button type="button" class="btn btn-primary">Load More</button>
+                <Cards v-for="(element, index) in ArrayCard" :key="index"
+                :prompsCard="element"/>
+            </div>
+            <div class="buttonLoad">
+                <button type="button" class="btn btn-primary">Load More</button>
+            </div>
         </div>
+        
     </main>
 
 </template>
@@ -107,6 +116,35 @@ main{
         height: 450px;
         background-image: url(/img/jumbotron.jpg);
 
+    }
+    .bg{
+        background-color: black;
+        
+        .wid{
+            margin: 0 auto;
+            width: 80%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 50px 0;
+            position: relative;
+            button{
+                position: absolute;
+                padding-left: 30px;
+                padding-right: 30px;
+                top: -20px;
+                left: 0;
+                text-transform: uppercase;
+            }
+        }
+        .buttonLoad{
+            display: flex;
+            justify-content: center;   
+            button{
+                 margin-bottom: 50px;
+                 padding: 10px 30px;
+            }
+        }
     }
     
 }
