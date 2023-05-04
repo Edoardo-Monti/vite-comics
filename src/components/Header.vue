@@ -60,7 +60,7 @@ export default{
             </div>
             <div class="second-cont">
                 <ul>
-                    <li v-for="(elem, index) in array">
+                    <li v-for="(elem, index) in array" :key="index">
                         <a href="/">{{elem.nome}}</a>
                     </li>
                      <!-- <li>
@@ -105,7 +105,7 @@ background-color: white;
         justify-content: space-between;
         align-items: center;
         width: 80%;
-        height: 100%;
+        // height: 100%;
         margin: 0 auto;
     }
 
@@ -114,22 +114,25 @@ background-color: white;
         ul {
             display: flex;
             align-items: center;
-            height: 100%;
+            // height: 100%;
             li {
                 list-style-type: none;
                 margin: 0 10px;
-                height: 100%;
-                
-                
-            a {
-                text-decoration: none;
-                color: black;
+                // height: 100%;
+                line-height: 117px;
                 &:hover{
-                    color: blue;
-                    border-bottom: 2px solid blue
-                }
+                        color: blue;
+                        border-bottom: 4px solid blue
+                    }
                 
-            }
+                a {
+                    text-decoration: none;
+                    color: black;
+                    &:hover{
+                        color: blue;
+                    }
+                    
+                }
             }
         }
     };
