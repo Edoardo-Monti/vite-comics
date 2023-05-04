@@ -1,7 +1,13 @@
 <script>
+import Cards from "./Cards.vue";
+import Card from "./Cards.vue"
 
 export default{
     name:"Main",
+    components:{
+    Card,
+    Cards
+},
     data(){
         return{
             ArrayCard: [
@@ -89,7 +95,7 @@ export default{
         
         </div>
         <div>
-
+            <Cards/>
         </div>
     </main>
 
@@ -98,9 +104,9 @@ export default{
 
 main{
     .background{
-        height: 500px;
+        height: 450px;
         background-image: url(/img/jumbotron.jpg);
-        
+
     }
     
 }
