@@ -1,12 +1,10 @@
 <script>
-import Cards from "./Cards.vue";
-import Card from "./Cards.vue"
+import Card from "./Cards.vue";
 
 export default{
     name:"Main",
     components:{
-    Card,
-    Cards
+    Card
 },
     data(){
         return{
@@ -98,7 +96,7 @@ export default{
             
             <div class="wid">
                 <button type="button" class="btn btn-primary">Load More</button>
-                <Cards v-for="(element, index) in ArrayCard" :key="index"
+                <Card v-for="(element, index) in ArrayCard" :key="index"
                 :prompsCard="element"/>
             </div>
             <div class="buttonLoad">
